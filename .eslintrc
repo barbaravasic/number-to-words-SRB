@@ -1,10 +1,43 @@
 {
-    "parser": "babel-eslint",
-    "extends": "airbnb",
+    "plugins": [
+        "import",
+        "jest"
+    ],
     "env": {
-      "mocha": true
+        "node": true
     },
     "rules": {
-      "comma-dangle": ["error", "only-multiline"]
+        "semi": [
+            "error",
+            "never"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "space-before-function-paren": "off",
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": true,
+                "variables": true
+            }
+        ],
+        "operator-linebreak": [
+            "error",
+            "after"
+        ],
+        "padded-blocks": "off"
     }
-  }
+}

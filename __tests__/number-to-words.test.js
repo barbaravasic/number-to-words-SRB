@@ -1,4 +1,4 @@
-const { numberToWordsSRB } = require('../index')
+import { numberToWordsSRB } from '../index';
 
 describe('number-to-words-srb integration', () => {
     it('should respond with nula if the number is 0', () => {
