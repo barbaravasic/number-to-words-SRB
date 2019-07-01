@@ -1,6 +1,6 @@
 {
   "name": "number-to-words-srb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Converts numbers to Serbian words",
   "main": "./lib/index.js",
   "scripts": {
