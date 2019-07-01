@@ -100,11 +100,12 @@ export const numberToWordsSRB = (numInput) => {
     }
 
     if (parseInt(numString) < 20 ) {
-        return firstNineteen[num]
+        return formatResult(firstNineteen[numString])
     }
 
     if (numString.length === 2) {
-        return `${tens[numString[0]]} ${firstNineteen[numString[1]]}`
+       
+        return  formatResult(`${tens[numString[0]]} ${firstNineteen[numString[1]]}`)
     }
 
     if (numString.length === 3) {

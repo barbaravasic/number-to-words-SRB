@@ -17,6 +17,18 @@ describe('number-to-words-srb integration', () => {
         const response = numberToWordsSRB(7352)
         expect(response).toBe('sedam hiljada trista pedeset dva')
     })
+    it('should respond with minus 5', () => {
+        const response = numberToWordsSRB(-5)
+        expect(response).toBe('minus pet')
+    })
+    it('should respond with minus petnaest', () => {
+        const response = numberToWordsSRB(-15)
+        expect(response).toBe('minus petnaest')
+    })
+    it('should respond with minus dvadeset osam', () => {
+        const response = numberToWordsSRB(-28)
+        expect(response).toBe('minus dvadeset osam')
+    })
     it('should respond with minus dvesta trideset dva', () => {
         const response = numberToWordsSRB(-232)
         expect(response).toBe('minus dvesta trideset dva')
