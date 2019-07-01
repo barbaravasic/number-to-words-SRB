@@ -1,0 +1,11 @@
+{
+  "name": "number-to-words-srb",
+  "version": "1.0.0",
+  "description": "Converts numbers to Serbian words",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barbara Vasic",
+  "license": "ISC"
+}
