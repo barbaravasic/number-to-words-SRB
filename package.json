@@ -11,5 +11,8 @@
     "url": "https://github.com/barbaravasic/number-to-words-SRB.git"
   },
   "author": "Barbara Vasic",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
