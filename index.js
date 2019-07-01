@@ -9,7 +9,7 @@ export const numberToWordsSRB = (numInput) => {
 
     const num = parseInt(numInput)
     
-    const numString = numInput.toString().split('').join('')
+    const numString = numInput.toString().split('').filter(item => item !== "-").join('')
 
     const slicedLastTwo = parseInt(numString.slice(-2))
     const slicedFourthFromBack = parseInt(numString[numString.length - 4])

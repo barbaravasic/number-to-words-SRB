@@ -17,5 +17,9 @@ describe('number-to-words-srb integration', () => {
         const response = numberToWordsSRB(7352)
         expect(response).toBe('sedam hiljada trista pedeset dva')
     })
+    it('should respond with minus dvesta trideset dva', () => {
+        const response = numberToWordsSRB(-232)
+        expect(response).toBe('minus dvesta trideset dva')
+    })
     
 })
