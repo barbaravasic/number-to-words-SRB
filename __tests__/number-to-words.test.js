@@ -34,4 +34,13 @@ describe('number-to-words-srb integration', () => {
         expect(response).toBe('minus dvesta trideset dva')
     })
     
+    it('should respond with "dvehiljadepetstopedesetdva" if the number is 2552, and second parameter false', () => {
+        const response = numberToWordsSRB(2552, false)
+        expect(response).toBe('dvehiljadepetstopedesetdva')
+    })
+
+    it('should respond with "minus dvestatridesetdva" if the number is -232, and second parameter false', () => {
+        const response = numberToWordsSRB(-232, false)
+        expect(response).toBe('minus dvestatridesetdva')
+    })
 })
