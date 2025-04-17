@@ -21,6 +21,4 @@ USAGE GUIDE:
        const output = numberToWordsSRB(23)
        // expected output: dvadeset tri
 
-DEMO: https://number-to-words-srb.netlify.com/
-
 Link to demo github: https://github.com/barbaravasic/number-to-words-SRB-demo
