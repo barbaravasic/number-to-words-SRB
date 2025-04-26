@@ -1,4 +1,4 @@
-export const numberToWordsSRB = (numInput) => {
+export const numberToWordsSRB = (numInput, space = true) => {
     const firstNineteen = ['', 'jedan', 'dva', 'tri', 'četiri', 'pet', 'šest', 'sedam', 'osam', 'devet', 'deset', 'jedanaest', 'dvanaest', 'trinaest', 'četrnaest', 'petnaest', 'šesnaest', 'sedamnaest', 'osamnaest', 'devetnaest']
 
     const firstNineteenMod = ['', 'jedna', 'dve', 'tri', 'četiri', 'pet', 'šest', 'sedam', 'osam', 'devet', 'deset', 'jedanaest', 'dvanaest', 'trinaest', 'četrnaest', 'petnaest', 'šesnaest', 'sedamnaest', 'osamnaest', 'devetnaest']
@@ -83,12 +83,14 @@ export const numberToWordsSRB = (numInput) => {
     }
     
     const formatResult = (res) => {
+        const joinWith = space ? ' ' : ''
+        let output = res.split(' ').filter(item => item !== '').join(joinWith)
 
         if(num < 0) {
-            return `minus ${res.split(' ').filter(item => item !== '').join(' ')}`
+            output = `minus ${output}`
         }
 
-        return res.split(' ').filter(item => item !== '').join(' ')
+        return output
     }
 
     if (num === 0) {
